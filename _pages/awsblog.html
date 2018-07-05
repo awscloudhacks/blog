@@ -1,0 +1,13 @@
+---
+layout: page
+permalink: /awsblog/
+title: AWSBlog
+---
+
+<div class="post-list">
+{% for post in site.categories.awsblog %}
+    <a href="{{ post.url | prepend: site.baseurl }}">
+    {% include post-cards.html %}
+    </a>
+{% endfor %}
+</div>
