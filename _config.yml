@@ -6,18 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Ashwathama
+title: AWSome Hacks
 description: > # this means to ignore newlines until "baseurl:"
- Ashwathama is a minimal website with an app like design. It also features card layouts for website elements.
+ This website is used to write technical blog.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://blog.techpointcloud.com"
 permalink: :title/
 full-url: "http://blog.techpointcloud.com/" # the base hostname & protocol for your site
-
-#baseurl: "/ashwath" # the subpath of your site, e.g. /blog
-#url: "http://webjeda.com/ashwath/"
-#permalink: :title/
-#full-url: "http://webjeda.com/ashwathama/" # the base hostname & protocol for your site
 
 # CSS
 sass:
@@ -35,7 +30,7 @@ analytics: UA-83979019-1
 simpleform-token: b6d4be9b039b666b3311e1ddcbfb577c
 
 # Redirect users after submitting the form
-redirect-to: http://blog.webjeda.com/thank-you/
+redirect-to: http://blog.techpointcloud.com
 
 # Site version
 version: 0.9
@@ -52,12 +47,12 @@ markdown: kramdown
 include: [_pages] # Includes files inside _pages directory [Do not remove this]
 
 author:
-  name: Ashwathama
+  name: Senthil
   image: ashwat.jpg # The author image will be shown on the header. Place this image in /images/ folder.
-  about: Ashwathama is a sage who wrote Mahabharatha. He is the son of Drona. He fought on the Kaurava side against the Pandavas. He put up a pretty good fight with mighty Bhima.
-  twitter: webjeda  # https://twitter.com/ is automatically added
-  facebook: webjeda # https://facebook.com/ is automatically added
-  email: hello@webjeda.com # mailto: is automatically added
+  about: Who is eager to learn new technology
+  twitter: senthil  # https://twitter.com/ is automatically added
+  facebook: senthil # https://facebook.com/ is automatically added
+  email: awscloudhacks@gmail.com # mailto: is automatically added
   
 gems: 
   - jekyll-seo-tag
