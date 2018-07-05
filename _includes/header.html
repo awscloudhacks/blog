@@ -10,13 +10,17 @@
 <a href="{{site.baseurl}}/">
 <img class="author-image" alt="site-title" src="{{site.baseurl}}/images/{{site.author.image}}">
 </a>
-<h1 class="author-about">{{site.author.name}}</h1>
+<h1 class="author-about">{{site.title}}</h1>
 </div>
 <div class="menu-category">
-<div class="menu-item"><a class="{% if page.url == '/design/' %}active{% endif %} menu-link" href="{{site.baseurl}}/design/">Design</a></div>
-<div class="menu-item"><a class="{% if page.url == '/code/' %}active{% endif %}  menu-link" href="{{site.baseurl}}/code/">Code</a></div>
-<div class="menu-item"><a class="{% if page.url == '/life/' %}active{% endif %}  menu-link" href="{{site.baseurl}}/life/">Life</a></div>
-</div>
+    <div class="menu-item"><a class="{% if page.url == '/design/' %}active{% endif %} menu-link" href="{{site.baseurl}}/design/">Design</a></div>
+    <div class="menu-item"><a class="{% if page.url == '/code/' %}active{% endif %}  menu-link" href="{{site.baseurl}}/code/">Code</a></div>
+    <div class="menu-item"><a class="{% if page.url == '/life/' %}active{% endif %}  menu-link" href="{{site.baseurl}}/life/">Life</a></div>
+    <div class="menu-item"><a class="{% if page.url == '/compute/' %}active{% endif %} menu-link" href="{{site.baseurl}}/compute/">Compute</a></div>
+    <div class="menu-item"><a class="{% if page.url == '/code/' %}active{% endif %}  menu-link" href="{{site.baseurl}}/code/">Storage</a></div>
+    <div class="menu-item"><a class="{% if page.url == '/life/' %}active{% endif %}  menu-link" href="{{site.baseurl}}/life/">Networking</a></div>
+    <div class="menu-item"><a class="{% if page.url == '/awsblog/' %}active{% endif %}  menu-link" href="{{site.baseurl}}/awsblog/">AWSBlog</a></div>
+    <div class="menu-item"><a class="{% if page.url == '/awsthisweek/' %}active{% endif %}  menu-link" href="{{site.baseurl}}/awsthisweek/">AWSThisWeek</a></div>
 </div>
 </header>
 
