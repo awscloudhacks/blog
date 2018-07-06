@@ -5,7 +5,6 @@ description: You can now create Private APIs in Amazon API Gateway. Private APIs
 date:   2018-06-26 10:50:00 +0530
 categories: awsblog
 author: senthil
-pgnum : 1
 ---
 
 

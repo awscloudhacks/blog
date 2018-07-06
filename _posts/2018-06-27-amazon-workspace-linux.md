@@ -5,7 +5,6 @@ description: Amazon WorkSpaces now offers a Linux desktop based on Amazon Linux 
 date:   2018-06-27 10:50:00 +0530
 categories: awsblog
 author: senthil
-pgnum: 4
 ---
 
 

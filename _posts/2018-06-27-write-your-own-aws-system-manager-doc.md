@@ -12,4 +12,4 @@ AWS Systems Manager is a powerful unified interface from AWS that provides you w
 
 An AWS Systems Manager document (SSM document) allows you to define what actions you want Systems Manager to perform on your AWS resources. Systems Manager includes many pre-configured documents that you can use by specifying parameters at runtime. Documents are written in JavaScript Object Notation (JSON) or YAML, and include steps and parameters that you define as needed. In this blog post, I outline the key aspects of leveraging AWS Systems Manager documents for your organization.
 
-<a href='https://aws.amazon.com/blogs/mt/ingest-aws-config-data-into-splunk-with-ease/'>Click here.</a> To learn more about writing your own AWS Systems Manager documents.
+<a href='https://aws.amazon.com/blogs/mt/writing-your-own-aws-systems-manager-documents/'>Click here.</a> To learn more about writing your own AWS Systems Manager documents.
