@@ -19,7 +19,7 @@ sass:
   style: compressed
 
 # Comments - Go to Disqus.com > sign up > get the short-name > insert it here
-disqus-shortname: awscloudhacks
+disqus-shortname: 
 
 # Tracker
 analytics: UA-83979019-1
