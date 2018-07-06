@@ -27,7 +27,7 @@ analytics: UA-83979019-1
 # Form Settings
 #
 # Contact form can be enabled by getting an API key from https://getsimpleform.com/
-simpleform-token: b6d4be9b039b666b3311e1ddcbfb577c
+simpleform-token: 57745490983a8a31c746b433b68043ea
 
 # Redirect users after submitting the form
 redirect-to: http://blog.techpointcloud.com
