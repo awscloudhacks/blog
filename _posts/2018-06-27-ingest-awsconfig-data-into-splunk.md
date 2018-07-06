@@ -5,7 +5,6 @@ description: AWS Config continuously monitors and records your AWS resource conf
 date:   2018-06-27 10:50:00 +0530
 categories: awsblog
 author: senthil
-pgnum: 5
 ---
 
 

@@ -5,7 +5,6 @@ description: You can use AWS Secrets Manager to rotate, manage, and retrieve sec
 date:   2018-06-27 10:50:00 +0530
 categories: awsblog
 author: senthil
-pgnum: 3
 ---
 
 
