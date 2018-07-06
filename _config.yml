@@ -58,5 +58,5 @@ gems:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
-
+paginate: 5
 #Test commit
