@@ -30,10 +30,6 @@ I would like to hear from my readers.
         
 </form>
 
-This form is setup using [SimpleForm](https://getsimpleform.com){: target="_blank" rel="nofollow"}. You can get your own API token and update the ``simpleform-token`` variable in **_config.yml**. 
-
-
-The styles for the form is included in this page. I haven't included it in the main age because it has at least 25 lines of css and it is used only on this page. So including it in main css file doesn't make sense.
 
 <style>
 form {
