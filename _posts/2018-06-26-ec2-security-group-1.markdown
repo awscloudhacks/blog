@@ -3,7 +3,7 @@ layout: post
 title:  "How to identify security group is attached to any resources"
 description: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
 date:   2018-06-26 10:50:00 +0530
-categories: compute
+categories: know-how-to
 author: senthil
 ---
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
