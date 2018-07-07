@@ -79,6 +79,7 @@
 
 p.post-excerpt {
     margin: 0;
+    font-size: 10px;
     color: $grey-color;
     @include media-query($on-palm) {
         font-size: 10px;
