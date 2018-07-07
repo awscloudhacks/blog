@@ -22,7 +22,7 @@
 <div class="post-meta"><h1 class="date">{{ post.date | date: "%-d" }}</h1>
 <span>{{ post.date | date: "%b" }}</span></div>
 <div class="post-title-box">
-<p class="post-link">{{ post.title | truncate: 40 }}</p>
+<p class="post-link">{{ post.title }}</p>
 <p class="post-excerpt">{{ post.description | strip_html | truncate: 120 }}</p>
 </div>
 </div>
