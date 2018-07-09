@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Avoid malicious attack on CloudTrail using CloudWatch and Lambda"
-description: . 
+description: As we all know that CloudTrail(API Tracker) is very important service provided by AWS. With CloudTrail, you can log, continuously monitor, and retain account activity related to actions across your AWS infrastructure. 
 date:   2018-07-08 19:00:00 +0530
 categories: automation
 author: senthil
