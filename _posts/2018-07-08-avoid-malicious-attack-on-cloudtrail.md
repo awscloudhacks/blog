@@ -29,8 +29,6 @@ Here you need to choose the event pattern and Service Name, Event Type, Specific
 
 ![]({{site.baseurl}}/images/cloudwatchrulecloudtrail1.PNG)
 
-In this screen, Enter the values for Rule name, Description and Click Create Rule.
-
 Event Pattern will be like below:
 ```
 {
@@ -50,7 +48,7 @@ Event Pattern will be like below:
   }
 }
 ```
-
+In this screen, Enter the values for Rule name, Description and Click Create Rule.
 ![]({{site.baseurl}}/images/cloudwatchrulecloudtrail2.PNG)
 
 Your CloudWatch Rule will be look like below.
