@@ -17,7 +17,7 @@ We have illustrated below the detailed steps which architecure diagram on how to
 
 Architecture:
 
-![]({{site.baseurl}}/images/cloudwatchrulecloudtrailarchitecture.png)
+![]({{site.baseurl}}/images/cloudwatchrulecloudtrailarchitecture.PNG)
 
 Before implementing this work around please make sure you have already enabled the CloudTrail on your AWS Account.
 
@@ -27,18 +27,18 @@ Go to CloudWatch Console --> Click Rules from Events --> Then Click Create Rule
 
 Here you need to choose the event pattern and Service Name, Event Type, Specific Operations Values as you see in the below screenshot. For the target choose the Lambda function which will enable the CloudTrail. 
 
-![]({{site.baseurl}}/images/cloudwatchrulecloudtrail1.png)
+![]({{site.baseurl}}/images/cloudwatchrulecloudtrail1.PNG)
 
 In this screen, Enter the values for Rule name, Description and Click Create Rule.
 
-![]({{site.baseurl}}/images/cloudwatchrulecloudtrail2.png)
+![]({{site.baseurl}}/images/cloudwatchrulecloudtrail2.PNG)
 
 Your CloudWatch Rule will be look like below.
 
-![]({{site.baseurl}}/images/cloudwatchrulecloudtrail3.png)
+![]({{site.baseurl}}/images/cloudwatchrulecloudtrail3.PNG)
 
 Lambda Function Code(Python):
-
+```
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import json
@@ -56,8 +56,7 @@ def lambda_handler(event, context):
             response = client.start_logging(Name=event['detail'
                     ]['requestParameters']['name'])
     except Exception, e:
-
         sys.exit()
-
+```
 
 
