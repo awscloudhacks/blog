@@ -48,7 +48,7 @@ include: [_pages] # Includes files inside _pages directory [Do not remove this]
 
 author:
   name: Senthil
-  image: ashwat.jpg # The author image will be shown on the header. Place this image in /images/ folder.
+  image: awslogo.JPG # The author image will be shown on the header. Place this image in /images/ folder.
   about: Who is eager to learn new technology
   twitter: senthil  # https://twitter.com/ is automatically added
   facebook: senthil # https://facebook.com/ is automatically added
