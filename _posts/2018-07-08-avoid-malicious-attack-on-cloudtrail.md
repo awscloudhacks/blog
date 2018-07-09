@@ -1,0 +1,63 @@
+---
+layout: post
+title:  "Avoid malicious attack on CloudTrail using CloudWatch and Lambda"
+description: . 
+date:   2018-07-08 19:00:00 +0530
+categories: automation
+author: senthil
+---
+
+As we all know that CloudTrail(API Tracker) is very important service provided by AWS. With CloudTrail, you can log, continuously monitor, and retain account activity related to actions across your AWS infrastructure. CloudTrail provides event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command line tools, and other AWS services. This event history simplifies security analysis, resource change tracking, and troubleshooting.
+
+With the help of CloudTrail logs, we can identify the actions which are made by a user. If a user disables CloudTrail logs accidentally or with malicious intent then audit logging events will not captured and hence you fail to have proper governance in place and It will put us in the complex situation.
+
+We should have the work around or monitoring to resolve this issue. We can achive this by using the CloudWatch events and Lambda function. Cloudwatch event rule will trigger the corresponding target which is Lambda function based on the event pattern. This Lambda function will automatically enable the CloudTrail and will notify us through the SNS with information like who disable the CloudTrail, Source IP and etc.
+
+We have illustrated below the detailed steps which architecure diagram on how to configure this event.
+
+Architecture:
+
+![]({{site.baseurl}}/images/cloudwatchrulecloudtrailarchitecture.png)
+
+Before implementing this work around please make sure you have already enabled the CloudTrail on your AWS Account.
+
+To create a CloudWatch Event Rule, Please follow the below steps:
+
+Go to CloudWatch Console --> Click Rules from Events --> Then Click Create Rule
+
+Here you need to choose the event pattern and Service Name, Event Type, Specific Operations Values as you see in the below screenshot. For the target choose the Lambda function which will enable the CloudTrail. 
+
+![]({{site.baseurl}}/images/cloudwatchrulecloudtrail1.png)
+
+In this screen, Enter the values for Rule name, Description and Click Create Rule.
+
+![]({{site.baseurl}}/images/cloudwatchrulecloudtrail2.png)
+
+Your CloudWatch Rule will be look like below.
+
+![]({{site.baseurl}}/images/cloudwatchrulecloudtrail3.png)
+
+Lambda Function Code(Python):
+
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import json
+import boto3
+
+print("Loading function")
+
+
+# Function to define Lambda Handler
+
+def lambda_handler(event, context):
+    try:
+        client = boto3.client('cloudtrail')
+        if event['detail']['eventName'] == 'StopLogging':
+            response = client.start_logging(Name=event['detail'
+                    ]['requestParameters']['name'])
+    except Exception, e:
+
+        sys.exit()
+
+
+
