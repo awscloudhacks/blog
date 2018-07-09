@@ -31,6 +31,26 @@ Here you need to choose the event pattern and Service Name, Event Type, Specific
 
 In this screen, Enter the values for Rule name, Description and Click Create Rule.
 
+Event Pattern will be like below:
+```
+{
+  "source": [
+    "aws.cloudtrail"
+  ],
+  "detail-type": [
+    "AWS API Call via CloudTrail"
+  ],
+  "detail": {
+    "eventSource": [
+      "cloudtrail.amazonaws.com"
+    ],
+    "eventName": [
+      "StopLogging"
+    ]
+  }
+}
+```
+
 ![]({{site.baseurl}}/images/cloudwatchrulecloudtrail2.PNG)
 
 Your CloudWatch Rule will be look like below.
