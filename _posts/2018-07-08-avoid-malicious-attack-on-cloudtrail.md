@@ -61,7 +61,7 @@ Lambda Function Code(Python):
 # -*- coding: utf-8 -*-
 import json
 import boto3
-
+import sys
 print("Loading function")
 
 
@@ -70,11 +70,26 @@ print("Loading function")
 def lambda_handler(event, context):
     try:
         client = boto3.client('cloudtrail')
+        sns = boto3.client('sns')
+        print("EveNt",event);
         if event['detail']['eventName'] == 'StopLogging':
             response = client.start_logging(Name=event['detail'
                     ]['requestParameters']['name'])
+            iamuser = event['detail']['userIdentity']['arn'].split("/")[-1]
+            print("IAM USER", iamuser)
+            message = """Hi Team,\n
+                    Cloudtrail has been disabled by %s IAM User.
+                    Please investigate on this""" %(iamuser)
+            response = sns.publish(
+            TopicArn='arn:aws:sns:us-west-2:<AWSACCOUNTID>:<IAM USERNAME>',
+            Subject="AWS Health Notification",
+            Message=message)
+        
     except Exception, e:
+
         sys.exit()
 ```
+NOTE: Please change the ARN value for SNS Topic to receive the email notification.
 
+That's it. We have deployed the solution now. You will be notified and CloudTrail will be enabled automatically if someone disabled the CloudTrail.
 
