@@ -17,6 +17,11 @@ With that brief introduction, It is very important to know which is a more suita
 
 The below table provides the comparision of all three AWS storage services.
 
-|        Amazon S3              |        Amazon EFS           |         Amazon EBS      |            
-| :---------------------------: | :-------------------------: | :---------------------: |  
+This is a simple markdown table
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
