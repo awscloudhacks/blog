@@ -10,6 +10,6 @@ author: senthil
 AWS provides the facility to keep the shortcuts in the top bar of the AWS console. Please check the below GIF image to know how to add the shortcuts.
 
 
-![]({{site.baseurl}}/images/awsconsole.GIF)
+![]({{site.baseurl}}/images/awsconsole.gif)
 
 It is very easy and useful to setup the shortcuts. You can create the shortcuts for the resources which are frequently accessed.
