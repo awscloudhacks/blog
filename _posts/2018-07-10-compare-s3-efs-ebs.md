@@ -18,5 +18,5 @@ With that brief introduction, It is very important to know which is a more suita
 The below table provides the comparision of all three AWS storage services.
 
 |        Amazon S3              |        Amazon EFS           |         Amazon EBS      |            
-| ----------------------------  |  -------------------------  |  ---------------------  |  
+| :---------------------------: | :-------------------------: | :---------------------: |  
 
