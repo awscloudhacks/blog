@@ -55,6 +55,8 @@ Your CloudWatch Rule will be look like below.
 
 ![]({{site.baseurl}}/images/cloudwatchrulecloudtrail3.PNG)
 
+Please see <a href='https://docs.aws.amazon.com/lambda/latest/dg/get-started-create-function.html'>how to create a Lambda function</a>
+
 Lambda Function Code(Python):
 ```
 #!/usr/bin/python

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Shortcuts for AWS Console"
-description: AWS provides the facility to keep the shortcuts in the top bar of the AWS console.
+title: "Shortcuts for AWS Console"
+description: AWS provides the facility to keep the shortcuts in the top bar of the AWS console. Please check the below GIF image to know how to add the shortcuts.
 date:   2018-07-09 14:10:00 +0530
 categories: know-how-to
 author: senthil
