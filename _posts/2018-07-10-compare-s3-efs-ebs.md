@@ -3,7 +3,7 @@ layout: post
 title:  "Comparision of S3 vs EFS vs EBS "
 description: AWS provides the three different of storage services which are S3, EFS and EBS. All these services are great, but only if you use them in accordance with their purpose.
 date:   2018-07-10 15:10:00 +0530
-categories: know-how-to
+categories: awsgeneral
 author: senthil
 ---
 
@@ -18,5 +18,5 @@ With that brief introduction, It is very important to know which is a more suita
 The below table provides the comparision of all three AWS storage services.
 
 |        Amazon S3              |        Amazon EFS           |         Amazon EBS      |            
------------------------------------------------------------------------------------------  
+| ----------------------------  |  -------------------------  |  ---------------------  |  
 
