@@ -19,9 +19,9 @@ The below table provides the comparision of all three AWS storage services.
 
 This is a simple markdown table
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
+| Features       | Amazon S3        | Amazon EFS           | Amazon EBS      |
+| -------------  |:----------------:| :-------------------:| ---------------:| 
+| Storage Size   | No limit on number of objects | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
