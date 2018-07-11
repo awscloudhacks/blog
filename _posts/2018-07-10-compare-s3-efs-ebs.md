@@ -32,4 +32,5 @@ This is a simple markdown table
 | Encryption Mechanisms | Server Side Encryption with Amazon S3-Managed Keys (SSE-Amazon S3),AWS KMS-Managed Keys (SSE-KMS), and with Customer-Provided Keys (SSE-C) •Client Side Encryption using an AWS KMS–Managed Customer Master Key (CMK) and using a client-side master key | Uses an AWS KMS–Managed Customer Master Key (CMK) and AES 256-bit Encryption standards | Uses an AWS KMS–Managed Customer Master Key (CMK) and AES 256-bit Encryption standards |
 | Availability | 99.99% available | Highly available (No public SLA) | 	99.99% available
 | AZ Failures | Can withstand up to two concurrent AZ failures | Every file system object is redundantly stored across multiple Availability Zones so it can survive one AZ failure. | Cannot withstand AZ failure without point-in time EBS Snapshots |
-
+| Durability | Eleven 9’s of durability (99.999999999%) | Highly durable (No public SLA) | 20 times more reliable than normal hard disks | 
+| Eventual Consistency Problem | AWS Amazon S3 offers eventual consistency for overwrite PUTS and DELETES in all regions. | 	No such issues | 	No such issues |
