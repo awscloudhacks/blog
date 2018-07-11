@@ -59,5 +59,9 @@ gems:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-archives
+      enabled: []
+      layout: 'archive'
+      permalinks:
+        day: '/:year/:month/:day/'
 paginate: 5
 #Test commit
