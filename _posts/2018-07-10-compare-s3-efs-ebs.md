@@ -22,7 +22,6 @@ This is a simple markdown table
 | Features       | Amazon S3        | Amazon EFS           | Amazon EBS       |
 | -------------  |:----------------:| :-------------------:| :---------------:| 
 | Storage Size   | No limit on number of objects |  No limitation on the size of the file system | Maximum storage size of 16 TB |
-
 | Object/File Size Limitation     | Individual Amazon S3 objects can range from a minimum of 0 bytes to a maximum of 5TB      |  Single files have a maximum size of 52TiB | No limitation on file size in EBS disk |
 | Data Throughput and I/O | Supports multipart upload. It is recommended for capability of objects larger than 100MB •The largest size of a single object uploaded using PUT API can be of 5GB |   Default throughput of 3GB | SSD- and HDD-backed storage types •Use of SSD backed and Provisioned IOPS is recommended for dedicated IO operations as needed |
 | Performance | Highly scalable managed service supports 100 PUT/LIST/DELETE requests per second by default. Can automatically scale till 300 PUT/LIST/DELETE requests per second or more than 800 GET requests per second | Highly Scalable Managed Service. Supports up to 7000 file system operations per second |
