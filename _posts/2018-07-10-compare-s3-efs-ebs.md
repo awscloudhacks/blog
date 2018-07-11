@@ -21,7 +21,7 @@ This is a simple markdown table
 
 | Features       | Amazon S3        | Amazon EFS           | Amazon EBS      |
 | -------------  |:----------------:| :-------------------:| ---------------:| 
-| Storage Size   | No limit on number of objects | $1600 |
+| Storage Size   | No limit on number of objects | Maximum storage size of 16 TB | No limitation on the size of the file system |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
