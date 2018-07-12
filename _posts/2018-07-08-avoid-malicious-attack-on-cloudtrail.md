@@ -84,7 +84,7 @@ def lambda_handler(event, context):
                     Please investigate on this""" %(iamuser)
             response = sns.publish(
             TopicArn='arn:aws:sns:us-west-2:<AWSACCOUNTID>:<SNS Topic>',
-            Subject="AWS Health Notification",
+            Subject="AWS Notification",
             Message=message)
         
     except Exception, e:
