@@ -83,7 +83,7 @@ def lambda_handler(event, context):
                     Cloudtrail has been disabled by %s IAM User.
                     Please investigate on this""" %(iamuser)
             response = sns.publish(
-            TopicArn='arn:aws:sns:us-west-2:<AWSACCOUNTID>:<IAM USERNAME>',
+            TopicArn='arn:aws:sns:us-west-2:<AWSACCOUNTID>:<SNS Topic>',
             Subject="AWS Health Notification",
             Message=message)
         
