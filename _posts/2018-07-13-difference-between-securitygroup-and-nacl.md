@@ -20,6 +20,5 @@ Following table summarizes basic difference betweek Security Group and NACL.
 | It is the firewall of EC2 Instance  | It is the firewall of the Subnets |
 | It is associated with EC2 Instance only | It is associate with Subnet only |
 | All rules are applied | Rules are applied in their order (the rule with the lower number gets processed first) |
-| It is a stateful which means any changes applied to an incoming rule will be automatically applied to the outgoing rule. Example: If you allow an incoming port 80, the outgoing port 80 will be automatically opened. |  It is a Stateless means any changes applied to an incoming rule will not be applied to the outgoing rule.
-Example: If you allow an incoming port 80, you would also need to apply the rule for outgoing traffic. |
+| It is a stateful which means any changes applied to an incoming rule will be automatically applied to the outgoing rule. Example: If you allow an incoming port 80, the outgoing port 80 will be automatically opened. |  It is a Stateless means any changes applied to an incoming rule will not be applied to the outgoing rule. Example: If you allow an incoming port 80, you would also need to apply the rule for outgoing traffic.|
 | Supports Allow rules only. You cannot deny a certain IP address | Supports Allow and Deny rules |
