@@ -35,13 +35,16 @@ Follow below steps to update your instance's user data to deploy the required SS
 * From EC2 Console, Go to Actions --> Instance Settings --> View/Change User Data.
 
 * In the View/Change User Data dialog box, paste below snippet with generated Public key.
+
 ```
+
 #cloud-config
 ssh_deletekeys: false
 ssh_authorized_keys:
   - ssh-rsa ENTER YOUR PUBLIC KEY HERE ...
 cloud_final_modules:
   - [ssh, always]
+
 ```
 
 * Choose Save.
