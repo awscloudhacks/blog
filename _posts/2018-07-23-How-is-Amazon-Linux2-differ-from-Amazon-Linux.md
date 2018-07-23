@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How is Amazon Linux 2 differ from Amazon Linux"
-description: There are four major differences Amazon Linux 2 has from Amazon Linux:.
+description: There are four major differences Amazon Linux 2 has from Amazon Linux.
 date:   2018-07-23 14:00:00 +0530
 categories: awsgeneral
 author: senthil
