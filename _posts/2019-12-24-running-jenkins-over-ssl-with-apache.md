@@ -10,7 +10,7 @@ author: senthil
 This blog explains how to run jenkins over ssl with apache in centos or amazon linux. 
 
 Step-by-step guide:
-1. Jenkins is already installed, so I just checked it was working and I was able to login
+1. I assume Jenkins is already installed, so I just checked it was working and I was able to login
 
 2. Install Apache HTTPD Server
     ```
@@ -22,29 +22,26 @@ Step-by-step guide:
 
     ```
 
-3. Update Jenkins configuration to use the prefix /jenkins
-
-Update /etc/sysconfig/jenkins line to match below
+3. Update Jenkins configuration to use the prefix /jenkins. Update /etc/sysconfig/jenkins line to match below
     ```
     JENKINS_ARGS="–prefix=/jenkins"
     ```
-4. Update Apache Configuration
 
-Create the following file with the contents listed below
+4. Update Apache Configuration. Create the following file with the contents listed below
 
-# cat /etc/httpd/conf.d/jenkins.conf
+cat /etc/httpd/conf.d/jenkins.conf
     ```
         <VirtualHost *:443>
         NameVirtualHost *:80
         NameVirtualHost *:443
 
         <VirtualHost *:80>
-            ServerAdmin jenkins.awscloudhacks.com 
-            Redirect permanent / https://jenkins.awscloudhacks.com/
+            ServerAdmin www.example.com 
+            Redirect permanent / https://www.example.com/
         </VirtualHost>
 
         <VirtualHost *:443>
-            ServerName jenkins.awscloudhacks.com
+            ServerName www.example.com
 
             SSLEngine On
             ProxyRequests Off
@@ -52,25 +49,26 @@ Create the following file with the contents listed below
 
             ProxyPass / http://localhost:8080/ nocanon
             ProxyPassReverse / http://localhost:8080/
-            ProxyPassReverse / http://jenkins.awscloudhacks.com/
+            ProxyPassReverse / http://www.example.com/
             AllowEncodedSlashes NoDecode
 
             <Proxy http://localhost:8080/* >
                 Order deny,allow
                 Allow from all
             </Proxy>
-            ErrorLog /var/log/httpd/error-jenkins.awscloudhacks.com.log
-            CustomLog /var/log/httpd/access-jenkins.awscloudhacks.com.log combined
+            ErrorLog /var/log/httpd/error-www.example.com.log
+            CustomLog /var/log/httpd/access-www.example.com.log combined
 
-            SSLCertificateFile /etc/httpd/ssl/jenkins-first.key
+            SSLCertificateFile /etc/httpd/ssl/jenkins.key
             SSLCertificateKeyFile /etc/httpd/ssl/jenkins.pem
-            SSLCertificateChainFile  /etc/httpd/ssl/jenkins-second.ca
+            SSLCertificateChainFile  /etc/httpd/ssl/jenkins.ca
 
             RequestHeader set X-Forwarded-Proto "https"
             RequestHeader set X-Forwarded-Port "443"
         </VirtualHost>
     ```
 
+Note: Please change the www.example.com to jenkins domain name.
 
 5. Add below line in the httpd.conf file
     ```
