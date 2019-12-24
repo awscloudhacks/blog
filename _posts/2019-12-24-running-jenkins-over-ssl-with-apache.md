@@ -3,7 +3,7 @@ layout: post
 title:  "Running Jenkins over SSL with Apache on Centos or Amazon linux"
 description: This blog explains how to run jenkins over ssl with apache in centos or amazon linux. 
 date:   2019-12-24 11:00:00 +0530
-categories: Jenkins
+categories: jenkins
 author: senthil
 ---
 
