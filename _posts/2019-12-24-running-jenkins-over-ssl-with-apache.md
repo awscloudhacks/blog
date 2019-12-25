@@ -32,41 +32,41 @@ Step-by-step guide:
 cat /etc/httpd/conf.d/jenkins.conf
 
     ```
-        <VirtualHost *:443>
-        NameVirtualHost *:80
-        NameVirtualHost *:443
+    <VirtualHost *:443>
+    NameVirtualHost *:80
+    NameVirtualHost *:443
 
-        <VirtualHost *:80>
-            ServerAdmin www.example.com 
-            Redirect permanent / https://www.example.com/
-        </VirtualHost>
+    <VirtualHost *:80>
+        ServerAdmin www.example.com 
+        Redirect permanent / https://www.example.com/
+    </VirtualHost>
 
-        <VirtualHost *:443>
-            ServerName www.example.com
+    <VirtualHost *:443>
+        ServerName www.example.com
 
-            SSLEngine On
-            ProxyRequests Off
-            ProxyPreserveHost On
+        SSLEngine On
+        ProxyRequests Off
+        ProxyPreserveHost On
 
-            ProxyPass / http://localhost:8080/ nocanon
-            ProxyPassReverse / http://localhost:8080/
-            ProxyPassReverse / http://www.example.com/
-            AllowEncodedSlashes NoDecode
+        ProxyPass / http://localhost:8080/ nocanon
+        ProxyPassReverse / http://localhost:8080/
+        ProxyPassReverse / http://www.example.com/
+        AllowEncodedSlashes NoDecode
 
-            <Proxy http://localhost:8080/* >
-                Order deny,allow
-                Allow from all
-            </Proxy>
-            ErrorLog /var/log/httpd/error-www.example.com.log
-            CustomLog /var/log/httpd/access-www.example.com.log combined
+        <Proxy http://localhost:8080/* >
+            Order deny,allow
+            Allow from all
+        </Proxy>
+        ErrorLog /var/log/httpd/error-www.example.com.log
+        CustomLog /var/log/httpd/access-www.example.com.log combined
 
-            SSLCertificateFile /etc/httpd/ssl/jenkins.key
-            SSLCertificateKeyFile /etc/httpd/ssl/jenkins.pem
-            SSLCertificateChainFile  /etc/httpd/ssl/jenkins.ca
+        SSLCertificateFile /etc/httpd/ssl/jenkins.key
+        SSLCertificateKeyFile /etc/httpd/ssl/jenkins.pem
+        SSLCertificateChainFile  /etc/httpd/ssl/jenkins.ca
 
-            RequestHeader set X-Forwarded-Proto "https"
-            RequestHeader set X-Forwarded-Port "443"
-        </VirtualHost>
+        RequestHeader set X-Forwarded-Proto "https"
+        RequestHeader set X-Forwarded-Port "443"
+    </VirtualHost>
     ```
 
 Note: Please change the www.example.com to jenkins domain name.
