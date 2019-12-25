@@ -30,9 +30,7 @@ Step-by-step guide:
 4. Update Apache Configuration. Create the following file with the contents listed below
 
 cat /etc/httpd/conf.d/jenkins.conf
-
     ```
-    <VirtualHost *:443>
     NameVirtualHost *:80
     NameVirtualHost *:443
 
