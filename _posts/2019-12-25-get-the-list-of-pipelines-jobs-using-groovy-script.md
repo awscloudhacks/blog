@@ -7,9 +7,9 @@ categories: jenkins
 author: senthil
 ---
 
-##Step-by-Step Guide
+Step-by-Step Guide
 
-1. Go to the https://<JENKINS-URL>/script
+1. Go to the https://JENKINS-URL/script
 
 2. Copy and paste below content in the text box and click "Run"
 
@@ -24,7 +24,6 @@ author: senthil
 Additional scripts:
 
 To print the name of all jobs including jobs inside of a folder and the folders themselves
-
     ```
     Jenkins.instance.getAllItems(AbstractItem.class).each {
         println(it.fullName)
@@ -32,7 +31,6 @@ To print the name of all jobs including jobs inside of a folder and the folders 
     ```
 
 To print the name of all jobs including jobs inside of a folder, but not the folders themselves
-
     ```
     Jenkins.instance.getAllItems(Job.class).each{ 
         println it.name + " - " + it.class
@@ -40,10 +38,8 @@ To print the name of all jobs including jobs inside of a folder, but not the fol
     ```
 
 This script will recursively print the name of all jobs implementing the AbstractProject class, i.e. Freestyle and Maven jobs.
-
     ```
     Jenkins.instance.getAllItems(AbstractProject.class).each {it ->
         println it.fullName;
     }
     ```
-    
