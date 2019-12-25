@@ -68,7 +68,7 @@ cat /etc/httpd/conf.d/jenkins.conf
     </VirtualHost>
     ```
 
-Note: Please change the www.example.com to jenkins domain name.
+Note: Please store the Certificate file, Chain file and Private key file in /etc/httpd/ssl directory. Also change the www.example.com to jenkins domain name.
 
 5. Add below line in the httpd.conf file
     ```
