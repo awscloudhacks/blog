@@ -27,10 +27,8 @@ Step-by-step guide:
     JENKINS_ARGS="–prefix=/jenkins"
     ```
 
-4. Update Apache Configuration. Create the following file with the contents listed below
-
-cat /etc/httpd/conf.d/jenkins.conf
-
+4. Update Apache Configuration. Create the following file with the contents listed below.
+   cat /etc/httpd/conf.d/jenkins.conf
     ```
     NameVirtualHost *:80
     NameVirtualHost *:443
