@@ -23,21 +23,24 @@ Step-by-Step Guide
 
 Additional scripts:
 
-    To print the name of all jobs including jobs inside of a folder and the folders themselves
+1. To print the name of all jobs including jobs inside of a folder and the folders themselves
+
     ```
     Jenkins.instance.getAllItems(AbstractItem.class).each {
         println(it.fullName)
     };
     ```
 
-    To print the name of all jobs including jobs inside of a folder, but not the folders themselves
+2. To print the name of all jobs including jobs inside of a folder, but not the folders themselves
+
     ```
     Jenkins.instance.getAllItems(Job.class).each{ 
         println it.name + " - " + it.class
     }
     ```
 
-    This script will recursively print the name of all jobs implementing the AbstractProject class, i.e. Freestyle and Maven jobs.
+3. This script will recursively print the name of all jobs implementing the AbstractProject class, i.e.     Freestyle and Maven jobs.
+
     ```
     Jenkins.instance.getAllItems(AbstractProject.class).each {it ->
         println it.fullName;
