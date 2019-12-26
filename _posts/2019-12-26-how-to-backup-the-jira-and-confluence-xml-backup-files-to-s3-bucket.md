@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Backup the Jira and confluence XML backup files to S3 bucket"
-description: This blog explains how to backup the Jira and confluence XML backup files to S3 bucket
-. 
+description: This blog explains how to backup the Jira and confluence XML backup files to S3 bucket. 
 date:   2019-12-26 11:00:00 +0530
 categories: know-how-to
 author: senthil
