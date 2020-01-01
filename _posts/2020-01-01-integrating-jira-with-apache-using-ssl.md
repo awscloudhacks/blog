@@ -31,18 +31,18 @@ Step-by-step Guide:
             SSLEngine On
             ProxyRequests Off
         
-        <Proxy *>
-                Require all granted
-        </Proxy>
+            <Proxy *>
+                    Require all granted
+            </Proxy>
     
-        ProxyPass / http://www.example.com:8080/
-        ProxyPassReverse / http://www.example.com:8080/
-        ErrorLog ${APACHE_LOG_DIR}/error-www.example.com.log
-        CustomLog ${APACHE_LOG_DIR}/access-www.example.com combined
+            ProxyPass / http://www.example.com:8080/
+            ProxyPassReverse / http://www.example.com:8080/
+            ErrorLog ${APACHE_LOG_DIR}/error-www.example.com.log
+            CustomLog ${APACHE_LOG_DIR}/access-www.example.com combined
 
-        SSLCertificateFile /etc/apache2/ssl/www.example.com.key
-                SSLCertificateKeyFile /etc/apache2/ssl/www.example.com.pem
-        SSLCertificateChainFile  /etc/apache2/ssl/www.example.com.ca
+            SSLCertificateFile /etc/apache2/ssl/www.example.com.key
+            SSLCertificateKeyFile /etc/apache2/ssl/www.example.com.pem
+            SSLCertificateChainFile  /etc/apache2/ssl/www.example.com.ca
 
             <FilesMatch "\.(cgi|shtml|phtml|php)$">
                     SSLOptions +StdEnvVars
