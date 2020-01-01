@@ -93,7 +93,7 @@ Step-by-step Guide:
 
    Note: jira is the name of the ssl configuration file without .conf extension
 
-6. Restart the JIRA and Apache service
+6. Restart the JIRA and Apache service.
    For Jira from bin directory run below commands
     ```
     ./shutdown.sh
