@@ -59,7 +59,7 @@ Step-by-step Guide:
     </IfModule>
     ```
 
-Note: Please store the Certificate file, Chain file and Private key file in /etc/apache2/ssl directory. Also change the www.example.com domain name to jira domain name.
+    Note: Please store the Certificate file, Chain file and Private key file in /etc/apache2/ssl directory. Also change the www.example.com domain name to jira domain name.
 
 4. Comment the default connector and add below connector in the server.xml file( which is available at conf directory of jira) Ex: /opt/atlassian/jira/conf
     ```
@@ -83,7 +83,7 @@ Note: Please store the Certificate file, Chain file and Private key file in /etc
         bindOnInit="false"/>
     ```
 
- Note: Please change the www.example.com domain name to jira domain name.
+   Note: Please change the www.example.com domain name to jira domain name.
 
 5. Run the below command to enable the jira apache ssl configuration and reload the apache configuration 
     ```
@@ -91,7 +91,7 @@ Note: Please store the Certificate file, Chain file and Private key file in /etc
     systemctl reload apache2
     ```
 
-Note: jira is the name of the ssl configuration file without .conf extension
+   Note: jira is the name of the ssl configuration file without .conf extension
 
 6. Restart the JIRA and Apache service
    For Jira from bin directory run below commands
