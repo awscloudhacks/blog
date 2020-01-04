@@ -1,0 +1,13 @@
+---
+layout: page
+permalink: /cheatsheet/
+title: CheatSheet
+---
+
+<div class="post-list">
+{% for post in site.categories.cheatsheet %}
+    <a href="{{ post.url | prepend: site.baseurl }}">
+    {% include post-cards.html %}
+    </a>
+{% endfor %}
+</div>
