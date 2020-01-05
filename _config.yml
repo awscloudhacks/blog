@@ -63,5 +63,9 @@ gems:
 plugins:
   - jekyll-archives
 
+category_archive:
+  type: jekyll-archives
+  path: /know-how-to/
+
 paginate: 5
 #Test commit
