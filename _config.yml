@@ -59,5 +59,9 @@ gems:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-archives
+
+plugins:
+  - jekyll-archives
+
 paginate: 5
 #Test commit
