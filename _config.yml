@@ -11,7 +11,8 @@ description: > # this means to ignore newlines until "baseurl:"
  This website is used to write technical blog.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: ""
-permalink: :title/
+#permalink: :title/
+permalink: pretty
 full-url: "" # the base hostname & protocol for your site
 
 # CSS
