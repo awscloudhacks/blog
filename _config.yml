@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: AWSome Hacks
+title: Cloud Hacks
 description: > # this means to ignore newlines until "baseurl:"
  This website is used to write technical blog.
 baseurl: "/" # the subpath of your site, e.g. /blog
@@ -31,7 +31,7 @@ analytics: UA-121878068-1
 simpleform-token: 57745490983a8a31c746b433b68043ea
 
 # Redirect users after submitting the form
-redirect-to: http://blog.techpointcloud.com
+redirect-to: https://blog.awscloudhacks.com
 
 # Site version
 version: 0.9
