@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to add input step to jenkins pipline"
-description: This blog explains How to add input step to jenkins pipline script groovy script. 
+description: This step pauses Pipeline execution and allows the user to interact and control the flow of the build. 
 date:   2020-04-04 11:00:00 +0530
 categories: jenkins
 author: senthil
