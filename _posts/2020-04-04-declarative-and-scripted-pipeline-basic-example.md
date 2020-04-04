@@ -22,7 +22,6 @@ Declarative and Scripted Pipelines are constructed fundamentally differently. De
 * is designed to make writing and reading Pipeline code easier.
 
 Sample Declarative Pipeline code:
-
     ```
     pipeline {
         agent {
@@ -41,7 +40,6 @@ Sample Declarative Pipeline code:
 
 
 Sample Scripted Pipeline code:
-
     ```
     node("master"){
         stage ('Build') {
