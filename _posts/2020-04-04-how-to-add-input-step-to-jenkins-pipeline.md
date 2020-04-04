@@ -21,18 +21,18 @@ This parameter gives a prompt which will be shown to a human:
     
 If you click "Proceed" the build will proceed to the next step, if you click "Abort" the build will be aborted.
 
-    Type: String
+Type: String
 
 * id (optional)
 Every input step has an unique ID. It is used in the generated URL to proceed or abort.
 
 A specific ID could be used, for example, to mechanically respond to the input from some external process/tool.
 
-    Type: String
+Type: String
 
 * ok (optional)
 
-    Type: String
+Type: String
 
 * parameters (optional)
 Request that the submitter specify one or more parameter values when approving. If just one parameter is listed, its value will become the value of the input step. If multiple parameters are listed, the return value will be a map keyed by the parameter names. If parameters are not requested, the step returns nothing if approved.
