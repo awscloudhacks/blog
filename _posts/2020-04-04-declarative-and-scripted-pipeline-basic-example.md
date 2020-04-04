@@ -8,6 +8,7 @@ author: senthil
 ---
 
 What is Jenkins Pipeline?
+
 Jenkins Pipeline is a suite of plugins which supports implementing and integrating continuous delivery pipelines into Jenkins.
 
 The definition of a Jenkins Pipeline is written into a text file (called a Jenkinsfile) which in turn can be committed to a project’s source control repository
@@ -21,6 +22,7 @@ Declarative and Scripted Pipelines are constructed fundamentally differently. De
 * is designed to make writing and reading Pipeline code easier.
 
 Sample Declarative Pipeline code:
+
     ```
     pipeline {
         agent {
@@ -39,6 +41,7 @@ Sample Declarative Pipeline code:
 
 
 Sample Scripted Pipeline code:
+
     ```
     node("master"){
         stage ('Build') {
@@ -50,3 +53,4 @@ Sample Scripted Pipeline code:
             sh "curl http://169.254.169.254/latest/meta-data/public-ipv4"
         }
     }
+    ```
