@@ -22,33 +22,33 @@ Declarative and Scripted Pipelines are constructed fundamentally differently. De
 * is designed to make writing and reading Pipeline code easier.
 
 Sample Declarative Pipeline code:
-    ```
-    pipeline {
-        agent {
-            label "master"  //Add your jenkins slave label here
-        }
-        stages {
-            stage('Build') {
-                steps {
-                    // Add your build code here
-                    sh 'echo "Welcome to Declarative Pipeline"'
-                }
+```
+pipeline {
+    agent {
+        label "master"  //Add your jenkins slave label here
+    }
+    stages {
+        stage('Build') {
+            steps {
+                // Add your build code here
+                sh 'echo "Welcome to Declarative Pipeline"'
             }
         }
     }
-    ```
+}
+```
 
 
 Sample Scripted Pipeline code:
-    ```
-    node("master"){
-        stage ('Build') {
-            //Add your build code here
-            sh "whoami" 
-        }
-        stage ('deploy') {
-            //Add your deploy code here
-            sh "curl http://169.254.169.254/latest/meta-data/public-ipv4"
-        }
+```
+node("master"){
+    stage ('Build') {
+        //Add your build code here
+        sh "whoami" 
     }
-    ```
+    stage ('deploy') {
+        //Add your deploy code here
+        sh "curl http://169.254.169.254/latest/meta-data/public-ipv4"
+    }
+}
+```
