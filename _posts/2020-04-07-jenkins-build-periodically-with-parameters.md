@@ -37,6 +37,7 @@ echo "My city is ${CITY}"
 ```
 
 Declarative Pipeline Configuration Example:
+
 The parameterized cron trigger can be specified using the key parameterizedSpecification under the parameterizedCron under the triggers directive. The built in cron trigger is still available and is independent of parameterizedCron
 ```
 pipeline {
