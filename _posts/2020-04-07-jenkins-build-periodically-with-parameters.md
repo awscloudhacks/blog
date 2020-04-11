@@ -22,6 +22,10 @@ In this example, I using two parameters: NAME and CITY.
 
 In “Build Triggers” tab, select “Build periodically with parameters”
 
+Architecture:
+
+![]({{site.baseurl}}/images/cloudwatchrulecloudtrailarchitecture.PNG)
+
 Jenkins setting automation run job with parameters every fifteen minutes as the picture below
 
 ```
