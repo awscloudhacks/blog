@@ -7,7 +7,7 @@ categories: jenkins
 author: senthil
 ---
 
-In this blog, we are going to see about How to use “Jenkins build periodically with parameters”? Using “Parameterized Scheduler” Plugin. The default, Parameterized Scheduler plugin will not be installed in Jenkins.
+In this blog, we are going to see about How to use “Jenkins build periodically with parameters”? Using “Parameterized Scheduler” Plugin. By default, Parameterized Scheduler plugin is not installed in Jenkins.
 
 Steps:
 
@@ -18,29 +18,29 @@ In “Manage Jenkins” –> In "Available" tab –> Select "Parameterized Sched
 
 ![]({{site.baseurl}}/images/parameterizedscheduler.png)
 
-* Configure job
+* Create new freeStyle job or Pipeline job 
 
-In this example, I using two parameters: NAME and CITY.
+* In Job Configure page, setup two string parameters: NAME and CITY.
 
+![]({{site.baseurl}}/images/parameterizedschedulerstringparams.png)
 
 In “Build Triggers” tab, select “Build periodically with parameters”
 
-
-Jenkins setting automation run job with parameters every fifteen minutes as the picture below
+![]({{site.baseurl}}/images/parameterizedschedulerbuildtrigger.png)
 
 ```
-# every fifteen minutes auto run job
-H/15 * * * * % NAME=Foo; CITY=NEWYORK
+# every minutes auto run job
+* * * * * % NAME=Mat; CITY=Chennai
 ```
 
-In the "Execute shell" basic.
+If it is freeStyle job, in the "Execute shell" basic. 
 
 ```
 echo "My name is ${NAME}"
 echo "My city is ${CITY}"
 ```
 
-Declarative Pipeline Configuration Example:
+If it is pipleline use Declarative Pipeline script:
 
 The parameterized cron trigger can be specified using the key parameterizedSpecification under the parameterizedCron under the triggers directive. The built in cron trigger is still available and is independent of parameterizedCron
 ```
