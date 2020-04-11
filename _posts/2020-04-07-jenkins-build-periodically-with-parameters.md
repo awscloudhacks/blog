@@ -15,6 +15,9 @@ Steps:
 
 In “Manage Jenkins” –> In "Available" tab –> Select "Parameterized Scheduler" –> click "Install without restart".
 
+
+![]({{site.baseurl}}/images/parameterizedscheduler.png)
+
 * Configure job
 
 In this example, I using two parameters: NAME and CITY.
@@ -22,9 +25,6 @@ In this example, I using two parameters: NAME and CITY.
 
 In “Build Triggers” tab, select “Build periodically with parameters”
 
-Architecture:
-
-![]({{site.baseurl}}/images/cloudwatchrulecloudtrailarchitecture.PNG)
 
 Jenkins setting automation run job with parameters every fifteen minutes as the picture below
 
