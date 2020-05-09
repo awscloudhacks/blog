@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "List of AWS CLI commands for EC2 Service"
-description: List of AWS CLI commands for EC2 Service.
+description: The below blog describes the list of AWS CLI commands for EC2 Service.
 date:   2020-05-09 18:00:00 +0530
 categories: cheatsheet
 author: senthil
