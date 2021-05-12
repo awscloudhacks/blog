@@ -31,7 +31,7 @@ analytics: UA-121878068-1
 simpleform-token: 57745490983a8a31c746b433b68043ea
 
 # Redirect users after submitting the form
-redirect-to: https://blog.awscloudhacks.com
+redirect-to: https://blog.awscloudtricks.com
 
 # Site version
 version: 0.9
